@@ -37,5 +37,11 @@ class Test {
 		int res = calc.Add("1,2,3");
 		assertEquals(6, res);
 	}
+	
+	@org.junit.jupiter.api.Test
+	void testAddNewLineString() {
+		int res = calc.Add("1\n2,3");
+		assertEquals(6, res);
+	}
 
 }
