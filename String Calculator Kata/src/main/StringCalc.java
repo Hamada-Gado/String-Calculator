@@ -6,11 +6,14 @@ public class StringCalc {
 		if(numbers.length() == 0) return 0;
 		
 		String[] numbers_split = numbers.split(",");
-		if(numbers_split.length == 1)
-			return Integer.parseInt(numbers_split[0]);
 		
-		return Integer.parseInt(numbers_split[0]) + Integer.parseInt(numbers_split[1]);
+		int sum = 0;
+		
+		for(int i = 0; i < numbers_split.length; i++) {
+			sum += Integer.parseInt(numbers_split[i]);
+		}
+		
+		return sum;
 	}
 
 }
-	
