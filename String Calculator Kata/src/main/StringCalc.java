@@ -5,7 +5,7 @@ public class StringCalc {
 	int Add(String numbers) {
 		if(numbers.length() == 0) return 0;
 		
-		String[] numbers_split = numbers.split(",");
+		String[] numbers_split = numbers.split(",|\n");
 		
 		int sum = 0;
 		
