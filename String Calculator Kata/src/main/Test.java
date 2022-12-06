@@ -31,5 +31,11 @@ class Test {
 		int res = calc.Add("1,2");
 		assertEquals(3, res);
 	}
+	
+	@org.junit.jupiter.api.Test
+	void testAddMultiString() {
+		int res = calc.Add("1,2,3");
+		assertEquals(6, res);
+	}
 
 }
