@@ -2,10 +2,15 @@ package main;
 
 public class StringCalc {
 
-	int Add(String numbers) {
-		if(numbers.length() == 0) return 0;
+	int Add(String string_numbers) {
 		
-		String[] numbers_split = numbers.split(",|\n");
+		// "//[delimiter]\n[numbers…]"
+		
+		if(string_numbers.length() == 0) return 0;
+		
+		String delimiter = "" + string_numbers.charAt(2);
+		
+		String[] numbers_split = (string_numbers.split("\n"))[1].split(delimiter);
 		
 		int sum = 0;
 		
